@@ -126,3 +126,14 @@ function makeSword() {
 
 // 8. Start the game by resetting the forge
 resetForge();
+
+// 9. Add heat
+
+
+// 10. Make a sword
+
+
+// 11. Reset the forge
+
+
+// 12. Connect and update the interface
