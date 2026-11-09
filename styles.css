@@ -42,14 +42,80 @@ footer { margin-top: 2rem; font-size: .9rem; color: #455449; }
 
 /* Customize buttons start here */
 button {
+  display: block;
   background: #006341;
   color: white;
   border: none;
-  padding: .5rem 1rem;
+  padding: .5rem 3rem;
   font-size: 1rem;
   border-radius: .25rem;
   cursor: pointer;
 }
+
 button:hover {
   background: #004b31;
+}
+
+button:active {
+  background: white;
+  color: #006341;
+  border: 1px solid #006341;
+}
+
+.forge-controls {
+  margin-top: 1.5rem;
+}
+
+/* Heat input label */
+.forge-controls label {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: bold;
+}
+
+/* Heat input and Add Heat button in one row */
+.heat-input-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Heat input styling */
+.heat-input-row input {
+  width: 150px;
+  padding: .5rem;
+  margin: 0;
+  border: 1px solid #bdc9c2;
+  border-radius: .25rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.heat-input-row button {
+  margin: 0;
+  padding: .5rem 5rem;
+}
+
+/* Make Sword and Reset Forge buttons */
+.forge-controls > button {
+  margin: 0 auto .75rem auto;
+  padding: .5rem 11rem;
+}
+
+/* Responsive controls for smaller screens */
+@media (max-width: 400px) {
+  .heat-input-row {
+    gap: .5rem;
+  }
+  .heat-input-row input {
+    width: 120px;
+  }
+  .heat-input-row button {
+    padding: .5rem 1rem;
+  }
+  .forge-controls > button {
+    max-width: 100%;
+  }
 }
