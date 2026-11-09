@@ -158,7 +158,12 @@ const enteredValue = Number(heatInput.value);
 };
 
 // 2. Make a sword
+makeSwordButton.addEventListener("click", forgeSword);
 
+function forgeSword() {
+  // Call the existing makeSword function
+  makeSword();
+};
 
 // 3. Reset the forge
 
