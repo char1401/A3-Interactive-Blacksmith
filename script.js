@@ -131,7 +131,7 @@ function makeSword() {
 }
 
 // 8. Start the game by resetting the forge
-resetForge();
+// resetForge();
 
 // Begins Assignment 3
 // 1. Add heat
@@ -166,6 +166,11 @@ function forgeSword() {
 };
 
 // 3. Reset the forge
-
+resetForgeButton.addEventListener("click", resetForge)
+  
+function resetForge() {
+  // Call the existing resetForge function
+  resetForge();
+};
 
 // 4. Connect and update the interface
