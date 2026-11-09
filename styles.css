@@ -39,3 +39,17 @@ footer { margin-top: 2rem; font-size: .9rem; color: #455449; }
 @media (max-width: 700px) { .layout { grid-template-columns: 1fr; } main { padding-top: 1.5rem; } .forge-top, .readings { padding: 1.5rem; } .message-box { margin-inline: 1.5rem; } }
 
 #forge-image { display: block; width: 100%; height: auto; max-height: 240px; object-fit: contain; margin: -1rem auto 1rem; }
+
+/* Customize buttons start here */
+button {
+  background: #006341;
+  color: white;
+  border: none;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  border-radius: .25rem;
+  cursor: pointer;
+}
+button:hover {
+  background: #004b31;
+}
