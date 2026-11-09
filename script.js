@@ -127,13 +127,34 @@ function makeSword() {
 // 8. Start the game by resetting the forge
 resetForge();
 
-// 9. Add heat
+// Begins Assignment 3
+// 1. Add heat
+addHeatButton.addEventListener("click", addHeat);
+
+function addHeat() {
+// Read the input and convert it into a number
+const enteredValue = Number(heatInput.value);
+// Check if the input is empty, invalid, or not a positive whole number
+  if (
+    heatInput.value.trim() === "" ||
+    !Number.isFinite(enteredValue) ||
+    !Number.isInteger(enteredValue) ||
+    enteredValue <= 0
+  ) {
+    actionMessage.textContent =
+      "Invalid input. Please enter a positive whole number, such as 10.";
+    return;
+  }
+  // Pass the valid number to the heatForge function
+  heatForge(enteredValue);
+  // Clear the input after adding heat
+  heatInput.value = "";
+};
+
+// 2. Make a sword
 
 
-// 10. Make a sword
+// 3. Reset the forge
 
 
-// 11. Reset the forge
-
-
-// 12. Connect and update the interface
+// 4. Connect and update the interface
