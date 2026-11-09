@@ -25,6 +25,12 @@ const forgeStatus = document.querySelector("#forge-status");
 const forgeImage = document.querySelector("#forge-image");
 const actionMessage = document.querySelector("#action-message");
 
+// 1. Select the new elements for Assignment 3
+const heatInput = document.querySelector("#heat-input");
+const addHeatButton = document.querySelector("#add-heat-button");
+const makeSwordButton = document.querySelector("#make-sword-button");
+const resetForgeButton = document.querySelector("#reset-forge-button");
+
 // 2. Create the variables for the forge state
 let heat = 20;
 let swords = 0;
