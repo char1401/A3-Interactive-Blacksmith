@@ -166,10 +166,17 @@ function forgeSword() {
 };
 
 // 3. Reset the forge
-resetForgeButton.addEventListener("click", resetForge)
-  
 function resetForge() {
-  // Call the existing resetForge function
+  heat = 20;
+  swords = 0;
+  heatInput.value = "";
+  actionMessage.textContent = "";
+  updateForge();
+}
+
+resetForgeButton.addEventListener("click", forgeReset);
+
+function forgeReset() {
   resetForge();
 };
 
